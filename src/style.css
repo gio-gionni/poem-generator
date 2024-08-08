@@ -3,3 +3,49 @@ body {
   background-color: #f7efd1;
   font-family: "Times New Roman", Times, serif;
 }
+
+h1 {
+  color: #e65d27;
+  font-family: "Lora", serif;
+  margin-top: 60px;
+  font-size: 32px;
+}
+
+footer {
+  font-size: smaller;
+  margin-top: 20px;
+  color: #716e66;
+}
+
+form {
+}
+.submit-button {
+  background-color: #e65d27;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.bar {
+  width: 300px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  border: none;
+  margin: 20px 0 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.poem-text {
+  font-family: "Lora", serif;
+  line-height: 2;
+  background-color: white;
+  width: 400px;
+  display: block;
+  margin: 30px auto;
+  border-left: 3px solid #e65d27;
+  padding: 20px 0;
+}
