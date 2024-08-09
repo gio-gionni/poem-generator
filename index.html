@@ -4,19 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>poem generator</title>
+
     <link rel="stylesheet" href="src/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="src/index.js"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <header><h1>AI Poem Generator</h1></header>
     <main>
-      <form action="">
+      <form id="poem-generator-form">
         <div>
           <input
             type="text"
@@ -31,11 +34,7 @@
           <input type="submit" class="submit-button" value="✨ Generate ✨" />
         </div>
       </form>
-      <div class="poem-text">
-        the poem will go here
-        <br />
-        the poem will go here
-      </div>
+      <div class="poem-text" id="poem-text"></div>
     </main>
 
     <footer>
@@ -48,5 +47,6 @@
       and hosted on
       <a href="https://poemgeneratorbygiulia.netlify.app/">Netfly</a>
     </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
