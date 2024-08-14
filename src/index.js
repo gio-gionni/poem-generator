@@ -11,7 +11,7 @@ function generatePoem(event) {
   event.preventDefault();
 
   new Typewriter("#poem-text", {
-    strings: "Generating poem",
+    strings: `Generating a poem`,
     autoStart: true,
     delay: 10,
     cursor: "",
@@ -24,8 +24,8 @@ function generatePoem(event) {
     "You are an AI that creates short poems, max 5 rows. you write the poems separating each line with a <br />. You sign every poem with <strong>The AI Poem Generator</strong> at the END of every poem";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("generating poem");
-  console.log(`prompt ${prompt}`);
+  let poemElement = document.querySelector("#poem-text");
+  poemElement.classList.remove("hidden");
 
   axios.get(apiUrl).then(displayPoem);
 }
